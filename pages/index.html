@@ -1,14 +1,250 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tyriis.dev</title>
-    <meta content="text/html; charset=utf-8" />
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <section>
-      <main>
-        <p>Hello world!</p>
-      </main>
-    </section>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/_f53d65c2-95aa-4362-8672-558bb67ca441-removebg-preview.png"
+              alt="Nils Müller"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Nils Müller">Nils Müller</h1>
+
+            <p class="title">IT Consultant</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <!--
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:me@tyriis.dev" class="contact-link">me@tyriis.dev</a>
+            </div>
+
+          </li>
+        -->
+            <!--
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="globe-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Homepage</p>
+
+              <a href="https://tyriis.dev" class="contact-link">tyriis.dev</a>
+            </div>
+
+          </li>
+        -->
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="chatbubbles-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Languages</p>
+
+                <span class="contact-link">German, English</span>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Vienna, Austria</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/tyriis/" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://gitlab.com/tyriis/" class="social-link">
+                <ion-icon name="logo-gitlab"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/mueller-nils/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="mailto:me@tyriis.dev" class="social-link">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://tyriis.dev" class="social-link">
+                <ion-icon name="globe-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <!--
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+      -->
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Over the past years, I've held technical roles as a Software
+              Development Team Leader and DevOps Engineer, with a focus on
+              gitops and continuous software lifecycle improvements. I'm
+              passionate about technology innovation for the software supply
+              chain and promoting a DevOps mindset throughout my work.
+            </p>
+
+            <p>
+              I'm committed to continuous improvement of the software
+              development lifecycle, championing the adoption of new tools and
+              technologies to streamline development and deployment processes. I
+              promote a DevOps mindset emphasizing collaboration and
+              communication between development and operations teams.
+            </p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.2.1/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.2.1/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
